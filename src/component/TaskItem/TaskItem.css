@@ -1,0 +1,27 @@
+.list-item{
+	padding: 15px;
+	width: 400px;
+	background-color: #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.list-item__icon{
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+.list-item__icon:hover{
+	color: red;
+}
+.list-item__checkbox{
+	width: 20px;
+	height: 20px;
+}
+.list-item__item{
+	width: 100%;
+}
+.list-item__checkbox:checked + .list-item__item{
+	text-decoration: line-through;
+}
